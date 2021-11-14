@@ -1,0 +1,90 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background: #303030;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#super {
+    background: #902020;
+    padding: 20px;
+    min-height: 15vh;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+    color: white;
+}
+
+#inputs {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 160px 240px;
+}
+
+#inputs > input {
+    width: 60px;
+    padding: 5px 7px;
+}
+
+#box {
+    border-radius: 0;
+    width: 200px;
+    height: 150px;
+    background: lightgreen;
+    position: absolute;
+}
+
+#code-area {
+    position: relative;
+    width: 90%;
+    min-height: 5vh;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+#code {
+    opacity: 0;
+    padding: 10px;
+    width: 90%;
+    min-height: 0;
+    background: #757575;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 400;
+}
+
+button {
+    position: relative;
+    left: 42%;
+    top: 15px;
+    transform: translateX(-40%);
+    padding: 7px 10px;
+    background: cyan;
+    border: 2px solid #101010;
+    border-radius: 15px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    font-size: 12pt;
+    cursor: pointer;
+}
+
+button[onclick = "copy()"] {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -28.5px;
+    background: rgb(108, 252, 108);
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Border Radius Previewer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Border Radius Previewer</h1>
+    <div id="super">
+        <div id="inputs">
+
+            <input type="number" id="tl" placeholder="0">
+            <input type="number" id="tr" placeholder="0">
+            <input type="number" id="bl" placeholder="0">
+            <input type="number" id="br" placeholder="0">
+        </div>
+        <div id="box"></div>
+    </div>
+    <br><br>
+
+    <div id="code-area">
+    
+        <textarea id="code" readonly rows="3"></textarea>
+    
+        <br>
+        <button onclick="applyChanges()">Apply changes</button><button onclick="copy()">Copy</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
